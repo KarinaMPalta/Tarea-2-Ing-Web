@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario</title>
+        <!--ESTILOS-->
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <!--JS-->
+        <script src="js/formulario.js" type="text/javascript"></script>
+    </head>
+    <body background="images/prueba3.gif" style="background-repeat: no-repeat; background-position: auto;">
+        <span id='mensaje'></span>
+        <form method="post" action="#" id="formulario">
+            <ul>
+                <!--PERSONAL INFORMATION SECTION-->
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" placeholder=" Nombre" required="true" />
+                
+                    <label for="apellidos">Apellidos</label>
+                    <input id="apellidos" type="text" placeholder=" Apellido" required="true"/>
+                
+                    <label for="rut">RUT</label>
+                    <input id="rut" type="text" placeholder=" 12345678-9" required="true"/>
+                
+                    <label for="correo">Correo Electronico</label>
+                    <input id="correo" type="email" placeholder=" email@example.com" required="true"/>
+
+                    <label for="telefono">Telefono movil (+56)</label>
+                    <input id=telefono type="number" placeholder=" 944664300" maxlength="9" required="true"/>
+                </li>
+                <!--LENGUAGES SECTION-->
+                <li>
+                    <h4>Seleccione 1 o más lenguajes de programación de su interés</h4>
+                    <input id="python" type="checkbox" name="lenguage" value="python"/>
+                    <label for="python">Python</label>
+                    <br>
+                    <input id="java" type="checkbox" name="lenguage" value="java"/>
+                    <label for="java">Java</label>
+                    <br>
+                    <input id="typescript" type="checkbox" name="lenguage" value="typescript"/>
+                    <label for="typescript">TypeScript</label>
+                    <br>
+                    <input id="php" type="checkbox" name="lenguage" value="php"/>
+                    <label for="php">PHP</label>
+                    <br>
+                    <input id="cSharp" type="checkbox" name="lenguage" value="cSharp"/>
+                    <label for="cSharp">C#</label>
+                    <br>
+                    <input id="cPlus" type="checkbox" name="lenguage" value="cPlus"/>
+                    <label for="cPlus">C++</label>
+                    
+                </li>
+                <!--KNOWLEDGE SECTION-->
+                <li>
+                    <h4>¿Cual es su nivel de conocimiento en programación?</h4>
+                    <input type="range" id="level" name="level" min="0" max="100" step="1" value="0">
+                </li>
+                <li class="Experience">
+                    <h4>Experiencia Laboral</h4>
+                    <input id="uno" type="radio" name="experiencia" value="1">
+                    <label for=uno>1 año.</label>
+
+                    <input id="dos" type="radio" name="experiencia" value="2">
+                    <label for="dos">2 años.</label>
+
+                    <input id="tres" type="radio" name="experiencia" value="3">
+                    <label for="tres">3 años.</label>
+
+                    <input id="cuatro" type="radio" name="experiencia" value="4">
+                    <label for="cuatro">4 años.</label>
+
+                    <input id="cinco" type="radio" name="experiencia" value="5">
+                    <label for="cinco">5 años o más.</label>
+
+                    <br><br>                      
+                </li>
+                <li requiered="true">
+                    <label id="letra" for="descripcion">Descripción breve:</label>
+                    <textarea id="descripcion"></textarea>
+                    
+                </li>
+                <li class="button">
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="click" id="reset">Limpiar</button>
+                </li>
+            </ul>
+        </form>        
+    </body>
+</html>

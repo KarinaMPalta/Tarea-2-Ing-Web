@@ -1,0 +1,84 @@
+form {
+    margin:auto;
+    text-align:center;
+    border-radius:10px;
+    border: 1px solid #666666;
+    width: 520px;
+    background-color: #dcdde1;
+}
+/*General list style*/
+form ul{
+    list-style-type: none;
+    padding:0px;
+    margin: 5% 0 0 5%;
+    text-align: left;
+}
+/**PERSONAL INFORMATION SECTION**/
+/*General 'label' style*/
+label{
+    display: inline-block;
+    width: 30%;
+}
+/**WORK EXPERINCE SECTION (.Experience)**/
+.Experience label{
+    width:auto !important;
+}
+
+.Experience input{
+    width:auto !important;
+}
+/*General'input' style*/
+input{
+    width:50%;
+    height: 20px;
+    border: 1px solid #ced6e0;
+    border-radius: 5px;
+    margin:3px;
+    
+}
+
+/**LENGUAGES SECTION **/
+/*Style input section lenguages*/
+#python, #java, #typescript, #php, #cSharp, #cPlus{ 
+    width: 7%;
+    height: 10px;
+}
+
+/**KNOWLEDGE SECTION**/
+
+
+
+/**DESCRIPTION SECTION**/
+#letra{
+    font-weight: bold;
+}
+textarea{
+    width:60%;
+    height: 5em;
+}
+#descripcion{
+    margin-left: 28%;
+    margin-top:-3%
+}
+
+/**BUTTON SECTION**/
+.button{
+    text-align: center;
+}
+button{
+    background-color:#20bf6b;
+    color:#f1f2f6;
+    border-radius:5px;
+    border:0px;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left:3%;
+    padding-right:3%;
+}
+button:hover{
+    background:#008080;
+    padding-top: 2%;
+    padding-bottom:2%;
+    padding-left:4%;
+    padding-right:4%;
+}
